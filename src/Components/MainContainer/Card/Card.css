@@ -10,14 +10,14 @@
     height: 100%;
     transform-style: preserve-3d;
     transition: all 0.5s ease;
-    background-color: yellow;
+    background-color: var(--primary);
 }
 .front{
     position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    background-color: aqua;
+    background-color: var(--primary);
     color: #333;
 }
 .back{
@@ -25,11 +25,20 @@
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    background-color: wheat;
-    color: #333;
+    background-color: var(--primary);
+    color: var(--secondary);
     transform: rotateY(180deg);
 }
 .flip{
     transform: rotateY(180deg);
 
+}
+.card-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 100px;
+}
+.card-container:nth-child(even){
+    flex-direction: row-reverse;
 }

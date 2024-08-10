@@ -5,6 +5,9 @@ const MainContainer = () => {
   return (
     <div>
     <Card title="hello"></Card>
+    <Card title="hello"></Card>
+    <Card title="hello"></Card>
+    <Card title="hello"></Card>
     </div>
   )
 }

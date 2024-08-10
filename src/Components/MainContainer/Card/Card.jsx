@@ -6,7 +6,7 @@ const [flip,setFlip]= useState('');
   return (
     <div className='card-container'>
         <div className='card-main-contain'>
-            <div className={'the-card '+flip} onClick={()=>{flip=='' ? setFlip('flip'):setFlip('')}}>
+            <div className={'the-card '+flip} onClick={()=>{flip==='' ? setFlip('flip'):setFlip('')}}>
             <div className='front'></div>
             <div className='back'>hello</div>
             </div>

@@ -4,6 +4,6 @@
   box-sizing: border-box;
 }
 :root{
-  --primary: gray;
+  --primary: #000000;
   --secondary: gold;
 }
