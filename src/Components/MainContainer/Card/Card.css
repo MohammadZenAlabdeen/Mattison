@@ -1,0 +1,35 @@
+.card-main-contain{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background-color: white;
+}
+.the-card{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    background-color: yellow;
+}
+.front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: aqua;
+    color: #333;
+}
+.back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: wheat;
+    color: #333;
+    transform: rotateY(180deg);
+}
+.flip{
+    transform: rotateY(180deg);
+
+}
