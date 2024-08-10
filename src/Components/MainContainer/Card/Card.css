@@ -74,6 +74,10 @@ width: 80%;
     width: clamp(280px,23.9780vw,400px);
     text-align: center;
 }
+.title{
+    cursor:pointer;
+    font-size: 30px;
+}
 .title-contain .title{
     background-color: var(--secondary);
     border-radius: 10px;

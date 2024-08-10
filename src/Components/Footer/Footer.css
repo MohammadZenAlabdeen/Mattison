@@ -1,0 +1,39 @@
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--primary);
+    padding: 30px 40px;
+    color: var(--secondary);
+}
+footer #footer-logo{
+    width: 100px;
+}
+footer .Contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+footer .Contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+footer .Contact span{
+    width: 150px;
+    text-align: left;
+}
+@media screen and (max-width:900px) {
+    footer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+    footer h3{
+        text-align: center;
+    }
+}
