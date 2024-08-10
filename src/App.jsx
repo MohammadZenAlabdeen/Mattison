@@ -6,8 +6,8 @@ function App() {
 
   return (
     <>
-    <Landing></Landing>
-
+      <Landing></Landing>
+      <p>check</p>
     </>
   )
 }
