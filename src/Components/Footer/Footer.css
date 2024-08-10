@@ -17,6 +17,7 @@ footer .Contacts{
     gap: 10px;
 }
 footer .Contact{
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
