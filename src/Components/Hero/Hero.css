@@ -1,0 +1,31 @@
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 30px;
+}
+.hero .heroText {
+  width: 50vw;
+  color: var(--secondary);
+}
+.hero .heroText h1 {
+  font-family: 'Dancing Script', cursive;
+  font-optical-sizing: auto;
+  font-size: 50px;
+  font-style: normal;
+}
+.smooth-button {
+  background-color: var(--secondary);
+  border-radius: 10px;
+  padding: 15px 10px;
+  margin-top: 20px;
+  width: 200px;
+}
+.smooth-button:hover {
+  background-color: var(--primary);
+  color: var(--secondary);
+  transition: all 0.2s ease-in-out;
+}

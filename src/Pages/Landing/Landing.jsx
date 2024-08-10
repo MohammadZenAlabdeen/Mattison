@@ -23,7 +23,10 @@ const Landing = () => {
             { link: 'About us' },
           ]}
         ></Nav>
-        <Hero></Hero>
+        <Hero
+          title="Mattison"
+          para="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime rerum adipisci ad voluptas repudiandae eius optio accusantium esse dolorum! Numquam odit modi minus dolorum praesentium voluptatum impedit, illo iure deleniti."
+        ></Hero>
       </header>
       <main>
         <MainContainer></MainContainer>
