@@ -3,7 +3,6 @@
     width: clamp(300px,23.9780vw,500px);
     height: clamp(350px,61.5384vh,600px);
     border-radius: 15px;
-    background-color: white;
     padding: 10px;
     text-align: center;
 
@@ -73,6 +72,10 @@ width: 80%;
 .card-container .title-contain{
     width: clamp(280px,23.9780vw,400px);
     text-align: center;
+}
+.title{
+    cursor:pointer;
+    font-size: 30px;
 }
 .title-contain .title{
     background-color: var(--secondary);
