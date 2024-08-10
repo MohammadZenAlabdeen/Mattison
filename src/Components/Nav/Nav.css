@@ -1,23 +1,27 @@
 nav {
-  background-color: black;
+  background-color: var(--primary);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
+  position: fixed;
   padding: 15px 30px;
+  left: 50%;
+  transform: translateX(-50%);
   margin: 20px auto;
   width: 95%;
   border-radius: 13px;
   z-index: 100;
 }
+nav .logo img {
+  width: 80px;
+}
 nav .links {
   display: flex;
-  gap: 15px;
-  font-family: poppins;
+  gap: 10px;
 }
 nav .links li {
   transition: all 0.4s ease-in-out;
-  padding: 20px 10px;
+  padding: 20px 7px;
   border-radius: 7px;
   cursor: pointer;
 }
@@ -25,13 +29,89 @@ nav .links li a {
   text-align: center;
   text-decoration: none;
   transition: all 0.4s ease-in-out;
-  color: gold;
+  color: var(--secondary);
+  font-size: 0.9rem;
   font-weight: 700;
 }
 nav .links li:hover {
-  background-color: gold;
-  color: black;
+  background-color: var(--secondary);
+  color: var(--secondary);
 }
 nav .links li:hover a {
-  color: black;
+  color: var(--primary);
+}
+nav .burger {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 25px;
+  display: none;
+}
+.nav-menu {
+  background-color: var(--primary);
+  display: none;
+  position: fixed;
+  top: 45px;
+  left: 50%;
+  transform: translateX(-160%);
+  width: 95%;
+  padding-top: 80px;
+  transition: 0.8s all ease-in-out;
+  z-index: 99;
+}
+.open {
+  transform: translateX(-50%);
+}
+.closed {
+  transform: translateX(-160%);
+}
+.scroll {
+  opacity: 0.8;
+}
+@media screen and (max-width: 992px) {
+  nav .burger {
+    display: block;
+  }
+  nav .links {
+    display: none;
+  }
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 13px;
+  }
+  .nav-menu ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    gap: 8px;
+  }
+  .nav-menu ul li {
+    width: 45%;
+    padding: 5px;
+    border-radius: 8px;
+    transition: 0.4s all ease-in-out;
+  }
+  .nav-menu a {
+    text-decoration: none;
+    color: var(--secondary);
+    font-weight: 700;
+    padding: 2rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    transition: 0.4s all ease-in-out;
+  }
+  .nav-menu ul li:hover {
+    background-color: var(--secondary);
+  }
+  .nav-menu ul li:hover a {
+    color: var(--primary);
+  }
 }

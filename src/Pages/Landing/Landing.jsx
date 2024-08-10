@@ -9,7 +9,7 @@ const Landing = () => {
     <>
       <header>
         <Nav
-          logo="Mattison"
+          logo="/src/assets/Logo (2).webp"
           navItems={[
             { link: 'Home' },
             { link: 'Software Services' },
