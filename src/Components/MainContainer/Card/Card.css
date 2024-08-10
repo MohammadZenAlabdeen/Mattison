@@ -1,7 +1,7 @@
 .card-main-contain{
     position: relative;
-    width: clamp(280px,23.9780vw,400px);
-    height: clamp(350px,61.5384vh,500px);
+    width: clamp(300px,23.9780vw,500px);
+    height: clamp(350px,61.5384vh,600px);
     border-radius: 15px;
     background-color: white;
     padding: 10px;
@@ -102,6 +102,7 @@ width: 80%;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        
     }
     .card-container:nth-child(odd){
         padding: 60px 0;
@@ -121,12 +122,14 @@ width: 100%;
    display: flex;
    align-items: center;
    justify-content: center;
+   margin-top: 20px;
 
   
 
 }
 .title{
-    width: 200px;
+    width: 250px;
+    font-size: 25px;
 }
 
 }
